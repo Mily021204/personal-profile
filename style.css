@@ -106,3 +106,36 @@ footer{
     margin-left:auto;
     margin-right:auto;
 }
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.certificate-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    transition:0.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-5px);
+}
+
+.certificate-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.certificate-card h3{
+    margin:15px 10px 10px;
+}
+
+.certificate-card p{
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
