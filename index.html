@@ -131,7 +131,7 @@
     </p>
 </div>
 
-<div class="project-card">
+<div class="project-card" onclick="openModal('studylib')">
     <h3>StudyLib</h3>
     <p>
         A web-based platform designed to organize
@@ -198,6 +198,22 @@
 
     </div>
 </section>
+
+    <div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <img id="modalImage">
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
 
 <footer>
     <p>© 2026 John Melquisedec P. Quines | Built with HTML, CSS, JavaScript & AI Assistance</p>
