@@ -61,7 +61,7 @@ const projects = {
 
     Studylib: {
         title: "StudyLib",
-        image: "StudyLib.png",
+        image: "./StudyLib.png",
         description: "A web-based platform that helps students organize study materials."
     },
 
