@@ -59,29 +59,13 @@ form.addEventListener("submit", async (e)=>{
 
 const projects = {
 
-    studylib: {
+    Studylib: {
         title: "StudyLib",
-        image: "studylib.png",
+        image: "StudyLib.png",
         description: "A web-based platform that helps students organize study materials."
     },
 
-    ccsphere: {
-        title: "CCSphere",
-        image: "ccsphere.png",
-        description: "A social platform for Computer Science students."
-    },
-
-    library: {
-        title: "Student Library System",
-        image: "library.png",
-        description: "A system for managing books and borrowing records."
-    },
-
-    portfolio: {
-        title: "Personal Portfolio Website",
-        image: "portfolio.png",
-        description: "My responsive personal portfolio website."
-    }
+  
 
 };
 
