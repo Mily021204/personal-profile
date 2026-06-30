@@ -1,4 +1,46 @@
-emailjs.init("YYlCh202vwnqpBqVWF");
+// Initialize EmailJS
+emailjs.init({
+    publicKey: "YYlCh202vwnqpBqVWF",
+});
+
+// ================= CONTACT FORM =================
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        }
+    )
+    .then(function(){
+
+        document.getElementById("status").innerHTML =
+            "✅ Message sent successfully!";
+
+        form.reset();
+
+    })
+    .catch(function(error){
+
+        document.getElementById("status").innerHTML =
+            "❌ Failed to send message.";
+
+        console.log(error);
+
+    });
+
+});
+
+// ================= PROJECTS =================
+
 const projects = {
 
     portfolio: {
@@ -27,13 +69,9 @@ const projects = {
 
 };
 
-// ---------- PROJECT MODAL ----------
+// ================= PROJECT MODAL =================
 
 function openModal(project){
-
-    alert("You clicked: " + project);
-
-    console.log(projects[project]);
 
     document.getElementById("projectModal").style.display = "block";
 
@@ -45,12 +83,19 @@ function openModal(project){
 
     document.getElementById("modalDescription").innerText =
         projects[project].description;
+
+}
+
+function closeModal(){
+
+    document.getElementById("projectModal").style.display = "none";
+
 }
 
 window.openModal = openModal;
+window.closeModal = closeModal;
 
-
-// ---------- CERTIFICATE MODAL ----------
+// ================= CERTIFICATE MODAL =================
 
 function openCertificate(image){
 
