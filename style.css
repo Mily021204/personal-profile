@@ -183,18 +183,26 @@ form button{
 
 .modal-content{
     background:#1e293b;
-    width:70%;
-    max-width:800px;
-    margin:60px auto;
+    width:80%;
+    max-width:900px;
+    max-height:90vh;
+    overflow:auto;
+    margin:30px auto;
     padding:25px;
     border-radius:15px;
     text-align:center;
 }
+}
 
 .modal-content img{
-    width:100%;
+    max-width:100%;
+    max-height:80vh;
+    width:auto;
+    height:auto;
     border-radius:10px;
-    margin:20px 0;
+    margin:20px auto;
+    display:block;
+}
 }
 
 .close{
