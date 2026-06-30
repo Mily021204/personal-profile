@@ -6,9 +6,9 @@ const projects = {
         description: "A responsive portfolio built using HTML, CSS, and JavaScript."
     },
 
-    studylib: {
+    StudyLib: {
         title: "StudyLib",
-        image: "studylib.png",
+        image: "StudyLib.png",
         description: "A web-based platform that helps students organize study materials."
     },
 
