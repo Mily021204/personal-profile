@@ -1,4 +1,4 @@
-
+emailjs.init("YYlCh202vwnqpBqVWF");
 const projects = {
 
     portfolio: {
