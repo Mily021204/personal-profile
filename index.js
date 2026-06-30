@@ -33,7 +33,9 @@ form.addEventListener("submit", function(e){
         document.getElementById("status").innerHTML =
             "❌ Failed to send message.";
 
-        console.error(error);
+   console.error(error);
+
+alert(JSON.stringify(error));
 
     });
 
