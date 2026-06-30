@@ -26,6 +26,8 @@ const projects = {
 
 };
 
+// ---------- PROJECT MODAL ----------
+
 function openModal(project){
 
     document.getElementById("projectModal").style.display = "block";
@@ -47,21 +49,25 @@ function closeModal(){
 
 }
 
-// Make these functions available to onclick in HTML
 window.openModal = openModal;
-window.closeModal = closeModal;function openCertificate(image){
+window.closeModal = closeModal;
 
-    document.getElementById("certificateModal").style.display="block";
 
-    document.getElementById("certificateImage").src=image;
+// ---------- CERTIFICATE MODAL ----------
+
+function openCertificate(image){
+
+    document.getElementById("certificateModal").style.display = "block";
+
+    document.getElementById("certificateImage").src = image;
 
 }
 
 function closeCertificate(){
 
-    document.getElementById("certificateModal").style.display="none";
+    document.getElementById("certificateModal").style.display = "none";
 
 }
 
-window.openCertificate=openCertificate;
-window.closeCertificate=closeCertificate;
+window.openCertificate = openCertificate;
+window.closeCertificate = closeCertificate;
