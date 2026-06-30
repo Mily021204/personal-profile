@@ -49,4 +49,19 @@ function closeModal(){
 
 // Make these functions available to onclick in HTML
 window.openModal = openModal;
-window.closeModal = closeModal;
+window.closeModal = closeModal;function openCertificate(image){
+
+    document.getElementById("certificateModal").style.display="block";
+
+    document.getElementById("certificateImage").src=image;
+
+}
+
+function closeCertificate(){
+
+    document.getElementById("certificateModal").style.display="none";
+
+}
+
+window.openCertificate=openCertificate;
+window.closeCertificate=closeCertificate;
