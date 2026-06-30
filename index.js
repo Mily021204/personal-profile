@@ -31,6 +31,10 @@ const projects = {
 
 function openModal(project){
 
+    alert("You clicked: " + project);
+
+    console.log(projects[project]);
+
     document.getElementById("projectModal").style.display = "block";
 
     document.getElementById("modalTitle").innerText =
@@ -41,17 +45,9 @@ function openModal(project){
 
     document.getElementById("modalDescription").innerText =
         projects[project].description;
-
-}
-
-function closeModal(){
-
-    document.getElementById("projectModal").style.display = "none";
-
 }
 
 window.openModal = openModal;
-window.closeModal = closeModal;
 
 
 // ---------- CERTIFICATE MODAL ----------
