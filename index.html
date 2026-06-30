@@ -150,37 +150,62 @@
 <section id="contact">
     <h2>Contact Me</h2>
 
-    <div class="card">
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Let's Connect 👋</h3>
+
+            <p>
+                Feel free to send me a message for collaborations,
+                projects, internships, or just to say hello.
+            </p>
+
+            <div class="info-item">
+                📧 <span>jmquines021204@gmail.com</span>
+            </div>
+
+            <div class="info-item">
+                🎓 BS Computer Science Student
+            </div>
+
+            <div class="info-item">
+                📍 Philippines
+            </div>
+
+        </div>
 
         <form id="contactForm">
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+            </div>
 
-            <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
-            >
+            <div class="input-group">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
+            </div>
 
-            <textarea
-                id="message"
-                placeholder="Write your message..."
-                required
-            ></textarea>
+            <div class="input-group">
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                    required></textarea>
+            </div>
 
-            <button type="submit" class="btn">
-                Send Message
+            <button type="submit" class="contact-btn">
+                Send Message 🚀
             </button>
 
-        </form>
+            <p id="status"></p>
 
-        <p id="status"></p>
+        </form>
 
     </div>
 </section>
