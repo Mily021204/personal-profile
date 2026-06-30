@@ -207,3 +207,16 @@ form button{
 .close:hover{
     color:red;
 }
+
+.certificate-card img{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.certificate-card img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
