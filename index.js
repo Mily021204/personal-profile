@@ -12,8 +12,8 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
 
     emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_5zzlgqs",
+        "template_97yg4tr",
         {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
@@ -33,7 +33,7 @@ form.addEventListener("submit", function(e){
         document.getElementById("status").innerHTML =
             "❌ Failed to send message.";
 
-        console.log(error);
+        console.error(error);
 
     });
 
