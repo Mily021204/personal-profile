@@ -1,4 +1,4 @@
-console.log("JavaScript Loaded!");
+alert("JavaScript is working!");
 const projects = {
 
     portfolio: {
