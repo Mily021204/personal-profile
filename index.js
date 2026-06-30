@@ -12,7 +12,7 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
 
     emailjs.send(
-        "service_5zzlgqs",
+        "service_293tzk8",
         "template_97yg4tr",
         {
             name: document.getElementById("name").value,
