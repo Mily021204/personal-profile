@@ -91,22 +91,28 @@
     <section id="certificates">
     <h2>Certificates</h2>
 
-    <div class="certificate-grid">
+    <div class="certificate-grid"
 
         <div class="certificate-card">
-            <img src="Certificate1.jpg" alt="Certificate 1">
+            <img src="Certificate1.jpg" 
+            alt="Certificate 1"
+            onclick="openCertificate(this.src)">
             <h3>C++ Essentials 1</h3>
             <p>Issued by Cisco Networking Academy</p>
         </div>
 
         <div class="certificate-card">
-            <img src="Certificate2.jpg" alt="Certificate 2">
+            <img src="Certificate2.jpg"
+            alt="Certificate 2"
+            onclick="openCertificate(this.src)">
             <h3>Introduction to Modern AI</h3>
             <p>Issued by Cisco Networking Academy</p>
         </div>
         
         <div class="certificate-card">
-            <img src="Certificate3.jpg" alt="Certificate 2">
+            <img src="Certificate3.jpg"
+            alt="Certificate 3"
+            onclick="openCertificate(this.src)">
             <h3>AI Fluency:Framework & Foundation</h3>
             <p>Issued by Anthropic Education</p>
         </div>
@@ -189,6 +195,18 @@
        <img id="modalImage" src="" alt="Project Screenshot">
 
         <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+    <div id="certificateModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeCertificate()">&times;</span>
+
+        <img id="certificateImage" src="" alt="Certificate">
 
     </div>
 
