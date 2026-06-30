@@ -1,6 +1,6 @@
 // Initialize EmailJS
 emailjs.init({
-    publicKey: "YYlCh202vwnqpBqVWF",
+    publicKey: "YlCh202vwnqpBqVWF",
 });
 
 // ================= CONTACT FORM =================
