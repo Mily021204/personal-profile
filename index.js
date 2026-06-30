@@ -30,14 +30,14 @@ form.addEventListener("submit", function(e){
     })
     .catch(function(error){
 
-        document.getElementById("status").innerHTML =
-            "❌ Failed to send message.";
+    console.error("EmailJS Error:", error);
 
-   console.error(error);
+    alert("Status: " + error.status + "\nText: " + error.text);
 
-alert(JSON.stringify(error));
+    document.getElementById("status").innerHTML =
+        "❌ Failed to send message.";
 
-    });
+});
 
 });
 
